@@ -12,7 +12,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                          password:              "foo",
                                          password_confirmation: "bar" } }
     end
-    follow_redirect!
+    # follow_redirect!
     assert_template 'users/new'
   end
 end
